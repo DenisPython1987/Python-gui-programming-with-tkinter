@@ -25,3 +25,12 @@ name_inp = tk.Entry(root)
 
 eater_inp = tk.Checkbutton("Check this button if you eat bananas")
 
+num_label = tk.Label(root, text="How many bananas do you eat per day?")
+num_inp = tk.Spinbox(root, from_=0, to=1000, increment=1)
+
+color_label = tk.Label(root, text="What is the best color of banana?")
+color_inp = tk.Listbox(root, height=1)
+color_choices = ('Any', 'Green', 'Green-yellow', 'Yellow', 'Brown spoted',
+                 'black')
+for choice in color_choices:
+    color_inp.insert(tk.END, choice)
