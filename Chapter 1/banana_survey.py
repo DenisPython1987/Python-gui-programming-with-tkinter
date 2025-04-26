@@ -34,3 +34,9 @@ color_choices = ('Any', 'Green', 'Green-yellow', 'Yellow', 'Brown spoted',
                  'black')
 for choice in color_choices:
     color_inp.insert(tk.END, choice)
+
+plantain_label = tk.Label(root, text="Do you eat plantains?")
+plantain_frame = tk.Frame(root)
+plantain_yes_inp = tk.Radiobutton(plantain_frame, text="Yes")
+plnatain_no_inp = tk.Radiobutton(plantain_frame, text="Ewwwww, no!")
+
