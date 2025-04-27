@@ -38,5 +38,22 @@ for choice in color_choices:
 plantain_label = tk.Label(root, text="Do you eat plantains?")
 plantain_frame = tk.Frame(root)
 plantain_yes_inp = tk.Radiobutton(plantain_frame, text="Yes")
-plnatain_no_inp = tk.Radiobutton(plantain_frame, text="Ewwwww, no!")
+plantain_no_inp = tk.Radiobutton(plantain_frame, text="Ewwwww, no!")
 
+banana_haiku_label = tk.Label(root, text="write a haiku about bananas")
+banana_haiku_inp = tk.Text(root, height=3)
+
+submit_btn = tk.Button(root, text="Submit survey")
+
+output_line = tk.Label(root, text='', anchor="w", justify="left")
+
+title.grid(columnspan=2)
+
+name_label.grid(row=1, column=0)
+
+name_inp.grid(row=1, column=1)
+
+eater_inp.grid(row=2, columnspan=2, sticky='we')
+
+num_label.grid(row=3, sticky=tk.W)
+num_inp.grid(row=3, column=1, sticky=(tk.W + tk.E))
