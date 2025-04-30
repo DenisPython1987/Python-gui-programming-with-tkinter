@@ -57,3 +57,7 @@ eater_inp.grid(row=2, columnspan=2, sticky='we')
 
 num_label.grid(row=3, sticky=tk.W)
 num_inp.grid(row=3, column=1, sticky=(tk.W + tk.E))
+
+color_label.grid(row=4, columnspan=2, sticky=tk.W, pady=10)
+color_inp.grid(row=5, columnspan=2, sticky=tk.W + tk.E, padx=25)
+
